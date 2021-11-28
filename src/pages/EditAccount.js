@@ -29,7 +29,7 @@ function EditAccount() {
                     />
                 </Aside>
 
-                <Content>
+                <Content large>
                     <Font.H1>Edit your account</Font.H1>
 
                     <Form

@@ -8,10 +8,6 @@ const NavItems = [
         text: "Artists",
     },
     {
-        path: "#contact",
-        text: "Contact",
-    },
-    {
         path: "/login",
         text: "Log in"
     },

@@ -56,7 +56,7 @@ function Card(props) {
                     <Font.Strong>Price:</Font.Strong> {props.price}
                 </Font.P>
 
-                <Button href="/artist-detail" primary>See their page</Button>
+                <Button to="/artist-detail" primary>See their page</Button>
             </Content>
         </Container>
     )

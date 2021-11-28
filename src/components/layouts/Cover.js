@@ -9,7 +9,7 @@ import * as Font from "../styles/Font"
 // Styles
 const Container = styled.div`
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@ const Container = styled.div`
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 90vh;
+                height: 100vh;
                 z-index: 1;
                 background-color: rgba(0, 0, 0, 0.7);
             }
@@ -35,7 +35,7 @@ const Container = styled.div`
 
 const Img = styled.img`
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
     position: ${props => (props.fixed ? "fixed" : "absolute")};
     z-index: 0;

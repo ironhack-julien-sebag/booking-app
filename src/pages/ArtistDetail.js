@@ -12,6 +12,9 @@ import Icon from "../components/ui/Icon"
 import Youtube from "../components/ui/Youtube"
 import Form from "../components/forms/Form"
 import Input from "../components/forms/Input"
+import Textarea from "../components/forms/Textarea"
+import ButtonSocial from "../components/ui/ButtonSocial"
+import Button from "../components/ui/Button"
 
 import Seed from "../components/data/Seed"
 const Rone = Seed[0]
@@ -69,7 +72,11 @@ const getToday = () => {
     return `${yy}-${mm}-${dd}`
 }
 
-console.log(getToday())
+const Buttons = styled.div``
+
+const Bio = styled(Font.P)`
+    white-space: pre-line;
+`
 
 function ArtistDetail() {
     return (
@@ -80,6 +87,8 @@ function ArtistDetail() {
                         src={Rone.picture}
                         alt={`Profile picture ${Rone.name}`}
                     />
+
+                    <Button to="/artist-detail/edit" primary>Edit</Button>
                 </Aside>
 
                 <Content>
@@ -94,7 +103,7 @@ function ArtistDetail() {
                         <Font.Strong>Location:</Font.Strong> {Rone.location}
                     </Font.P>
 
-                    <Font.P>{Rone.bio}</Font.P>
+                    <Bio>{Rone.bio}</Bio>
 
                     <Font.H3>Media</Font.H3>
 
@@ -105,10 +114,29 @@ function ArtistDetail() {
                     <Font.H3>Contact {Rone.name}</Font.H3>
 
                     <Form action="" method="POST" btnPrimary="Send">
-                        <Input label="Date" type="date" name="date" id="date" min={getToday()} value={getToday()} />
-                        
+                        <Input
+                            type="hidden"
+                            name="email"
+                            id="email"
+                            value="userEmail"
+                            hidden
+                        />
+
+                        <Input
+                            label="Date"
+                            type="date"
+                            name="date"
+                            id="date"
+                            min={getToday()}
+                            value={getToday()}
+                        />
+
+                        <Textarea
+                            label="Your message"
+                            name="message"
+                            id="message"
+                        />
                     </Form>
-                    {/* Contact form */}
                 </Content>
 
                 <Aside>
@@ -119,6 +147,18 @@ function ArtistDetail() {
                             <li key={i}>{convertDate(item)}</li>
                         ))}
                     </Font.List>
+
+                    <Font.H4>Follow</Font.H4>
+
+                    <Buttons>
+                        {Rone.follow.map((item, i) => (
+                            <ButtonSocial
+                                type={item.name}
+                                to={item.link}
+                                key={i}
+                            />
+                        ))}
+                    </Buttons>
                 </Aside>
             </Container>
         </Page>

@@ -3,7 +3,7 @@ const Seed = [
         id: 1,
         name: "Rone",
         genre: "Electronic",
-        bio: 'As Rone, Paris - bred producer Erwan Castex creates music that is both otherworldly and warm, marrying cinematic ambitions to sounds and ideas rooted in minimal and experimental techno.Establishing a shimmering, melodic techno sound with his 2009 debut, Spanish Breakfast, his music gradually became more elaborately constructed and stylistically diverse.\nAlbums such as 2014\'s Creatures and 2017\'s Mirapolis featured guest appearances from Saul Williams, Bryce Dessner(the National), and Etienne Daho, while incorporating symphonic arrangements, trance elements, heartfelt balladry, and more.\nBorn in the Parisian suburb of Boulogne - Billancourt in 1980, he debuted his Rone project in 2007, co - producing several tracks with Italian techno artist Lucy.After attracting the attention of French producer Agoria, Rone was signed to the InFiné label in 2008, making his solo debut with the Bora EP.\nFollowing the single "La Dame Blanche", his debut album, Spanish Breakfast, landed on the imprint in 2009. In 2011, Castex moved to Berlin and recorded his sophomore effort, Tohu Bohu, a 2012 release that featured rapper High Priest from Antipop Consortium.The album\'s biggest single, "Bye Bye Macadam," hit in 2013 thanks in part to a virally successful animated video and a Juan Atkins remix, while that same year, the National hired Rone to provide soundscapes for their album Trouble Will Find Me.',
+        bio: 'As Rone, Paris - bred producer Erwan Castex creates music that is both otherworldly and warm, marrying cinematic ambitions to sounds and ideas rooted in minimal and experimental techno.\nEstablishing a shimmering, melodic techno sound with his 2009 debut, Spanish Breakfast, his music gradually became more elaborately constructed and stylistically diverse.\nAlbums such as 2014\'s Creatures and 2017\'s Mirapolis featured guest appearances from Saul Williams, Bryce Dessner(the National), and Etienne Daho, while incorporating symphonic arrangements, trance elements, heartfelt balladry, and more.\nBorn in the Parisian suburb of Boulogne - Billancourt in 1980, he debuted his Rone project in 2007, co - producing several tracks with Italian techno artist Lucy.After attracting the attention of French producer Agoria, Rone was signed to the InFiné label in 2008, making his solo debut with the Bora EP.\nFollowing the single "La Dame Blanche", his debut album, Spanish Breakfast, landed on the imprint in 2009. In 2011, Castex moved to Berlin and recorded his sophomore effort, Tohu Bohu, a 2012 release that featured rapper High Priest from Antipop Consortium.The album\'s biggest single, "Bye Bye Macadam," hit in 2013 thanks in part to a virally successful animated video and a Juan Atkins remix, while that same year, the National hired Rone to provide soundscapes for their album Trouble Will Find Me.',
         price: 2000,
         available: [
             "2021-12-06",
@@ -22,12 +22,20 @@ const Seed = [
             "https://www.youtube.com/embed/SQIoaBCXCYQ",
         ],
         location: "Berlin",
-        follow: {
-            youtube: "https://www.youtube.com/channel/UCFBjUE5XIqzIj4IyRo1qPDQ",
-            facebook: "https://www.facebook.com/roneofficial",
-            // twitter: "",
-            instagram: "https://www.instagram.com/roneofficial/",
-        },
+        follow: [
+            {
+                name: "youtube",
+                link: "https://www.youtube.com/channel/UCFBjUE5XIqzIj4IyRo1qPDQ",
+            },
+            {
+                name: "facebook",
+                link: "https://www.facebook.com/roneofficial",
+            },
+            {
+                name: "instagram",
+                link: "https://www.instagram.com/roneofficial/",
+            },
+        ],
     },
     {
         id: 2,

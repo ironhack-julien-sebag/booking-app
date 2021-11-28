@@ -9,8 +9,8 @@ const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: ${Variables.Margins.L};
-    padding: calc(88px + ${Variables.Margins.XXL}) 10vw
-        ${Variables.Margins.XXL} 10vw;
+    padding: calc(88px + ${Variables.Margins.XXL}) 10vw ${Variables.Margins.XXL} 10vw;
+    min-height: 100vh;
 `
 
 export const Aside = styled.aside``

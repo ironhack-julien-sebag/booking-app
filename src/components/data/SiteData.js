@@ -6,11 +6,25 @@ const SiteData = {
     Author: "",
     Year: "",
 
+    // Social
+    Social: ["facebook", "instagram"],
+
+    // Cities
+    Cities: [
+        "Berlin",
+        "Hamburg",
+        "Frankfurt",
+        "Munich",
+        "Cologne",
+        "Leipzig",
+        "Düsseldorf",
+    ],
+
     // Metadata
     Cover: "",
     Type: "",
     Language: "en_EN",
-    Keywords: []
+    Keywords: [],
 }
 
 export default SiteData

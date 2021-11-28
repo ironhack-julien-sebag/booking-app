@@ -9,6 +9,8 @@ import ArtistDetail from "../pages/ArtistDetail"
 import Login from "../pages/Login"
 import AccountUser from "../pages/AccountUser"
 import EditAccount from "../pages/EditAccount"
+import EditPassword from "../pages/EditPassword"
+import EditArtist from "../pages/EditArtist"
 
 // Routes
 const Pages = [
@@ -18,6 +20,13 @@ const Pages = [
         component: Home,
     },
 
+    // Login
+    {
+        path: "/login",
+        component: Login,
+    },
+
+    // Artists
     {
         path: "/artists",
         component: Artists,
@@ -29,10 +38,11 @@ const Pages = [
     },
 
     {
-        path: "/login",
-        component: Login,
+        path: "/artist-detail/edit",
+        component: EditArtist,
     },
 
+    // User
     {
         path: "/account-user",
         component: AccountUser,
@@ -42,6 +52,13 @@ const Pages = [
         path: "/account-user/edit",
         component: EditAccount,
     },
+
+    {
+        path: "/account-user/edit/edit-password",
+        component: EditPassword,
+    },
+
+    {},
 ]
 
 function Switch() {

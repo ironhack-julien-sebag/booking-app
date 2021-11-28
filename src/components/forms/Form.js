@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 // Components
 import * as Variables from "../styles/Variables"
-import * as Font from "../styles/Font"
+// import * as Font from "../styles/Font"
 import Button from "../ui/Button"
 
 // Styles

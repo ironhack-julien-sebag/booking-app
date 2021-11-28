@@ -1,11 +1,11 @@
 // Packages
 import React from "react"
-import styled from "styled-components"
-import { Link } from "react-router-dom"
+// import styled from "styled-components"
+// import { Link } from "react-router-dom"
 
 // Components
 import Page from "../components/layouts/Page"
-import * as Font from "../components/styles/Font"
+// import * as Font from "../components/styles/Font"
 import Cover from "../components/layouts/Cover"
 import Button from "../components/ui/Button"
 
@@ -13,7 +13,7 @@ const pageTitle = "Book an artist / a band for your next event!"
 
 function Home() {
     return (
-        <Page title="Homepage" description="" keywords="">
+        <Page title="Homepage" description="" keywords="" noFooter>
             <Cover
                 img="/images/cover-home.jpg"
                 alt="Cover Book a Band"
@@ -23,7 +23,7 @@ function Home() {
             >
                 {/* Form */}
                 
-                <Button as="a" href="/artists" primary>Search</Button>
+                <Button to="/artists" primary>Search</Button>
             </Cover>
         </Page>
     )

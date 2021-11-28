@@ -26,8 +26,8 @@ const Container = styled.button`
 `
 
 function Button(props) {
-    return props.href ? (
-        <Container to={props.href} as={Link} {...props}>
+    return props.to ? (
+        <Container to={props.to} as={Link} {...props}>
             {props.children}
         </Container>
     ) : (

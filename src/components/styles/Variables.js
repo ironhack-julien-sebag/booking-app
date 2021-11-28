@@ -9,6 +9,12 @@ export const Colors = {
     Danger: "#A40606",
     Black: "#06070E",
     White: "#FFFFFF",
+
+    // Social links
+    Facebook: "#3B5998",
+    Instagram:
+        "linear-gradient(45deg, #F09433 0%,#E6683C 25%,#DC2743 50%,#CC2366 75%,#BC1888 100%)",
+    Youtube: "#C4302B",
 }
 
 // Margins

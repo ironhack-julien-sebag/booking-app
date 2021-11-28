@@ -4,6 +4,7 @@ import React from "react"
 // Components
 import Helmet from "./Helmet"
 import Header from "./Header"
+import Footer from "./Footer"
 
 function Page(props) {
     return (
@@ -15,8 +16,10 @@ function Page(props) {
             />
 
             <Header background={props.headerBackground} />
-            
+
             {props.children}
+
+            {!props.noFooter && <Footer />}
         </>
     )
 }

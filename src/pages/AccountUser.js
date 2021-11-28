@@ -1,12 +1,12 @@
 // Imports
 import React from "react"
-import styled from "styled-components"
+// import styled from "styled-components"
 import { Link } from "react-router-dom"
 
 // Components
 import Page from "../components/layouts/Page"
 import * as Font from "../components/styles/Font"
-import * as Variables from "../components/styles/Variables"
+// import * as Variables from "../components/styles/Variables"
 import Container, { Aside, Content } from "../components/layouts/Container"
 import ProfilePicture from "../components/artists/ProfilePicture"
 
@@ -20,6 +20,7 @@ function AccountUser() {
 
                 <Content large>
                     <Font.H1>Welcome fullName</Font.H1>
+                    
                     <Font.P>
                         <Link to="/account-user/edit">Edit your account</Link>
                     </Font.P>

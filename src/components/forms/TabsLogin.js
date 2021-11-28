@@ -16,6 +16,7 @@ import {
 } from "../ui/Tabs"
 import Form from "./Form"
 import Input from "./Input"
+import Password from "./Password"
 
 // Styles
 const LinkForgot = styled(Font.P)`
@@ -60,12 +61,7 @@ function TabsLogin() {
                     <Form action="" method="POST" btnPrimary="Log in">
                         <Input label="Email" name="email" id="email" />
 
-                        <Input
-                            label="Password"
-                            name="password"
-                            id="password"
-                            type="password"
-                        />
+                        <Password label="Password" />
                     </Form>
 
                     <LinkForgot>
@@ -100,13 +96,7 @@ function TabsLogin() {
 
                         <Input label="Address" id="address" name="address" />
 
-                        <Input
-                            label="Password"
-                            id="password"
-                            email="password"
-                            name="password"
-                            type="password"
-                        />
+                        <Password label="Password" />
                     </Form>
                 </Tab>
             </TabContent>

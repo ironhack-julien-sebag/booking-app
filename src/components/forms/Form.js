@@ -14,9 +14,8 @@ const Container = styled.form`
     grid-template-columns: 1fr;
     gap: ${Variables.Margins.L};
     width: 100%;
-    padding: ${Variables.Margins.L};
+    margin-top: ${Variables.Margins.L};
     max-width: 60ch;
-    margin: 0 auto;
 `
 
 const ButtonsContainer = styled.div`

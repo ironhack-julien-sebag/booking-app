@@ -1,5 +1,5 @@
 // Packages
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 // Components
 import { IconMixin } from "../ui/Icon"
@@ -12,6 +12,12 @@ export const H1 = styled.h1`
             ? Variables.FontSizes.TitleDisplay
             : Variables.FontSizes.TitleLarge};
     font-weight: ${Variables.FontWeights.Bold};
+
+    ${props => props.hidden && css`
+        position: fixed;
+        top: -999em;
+        left: -999em;
+    `}
 `
 
 export const H2 = styled.h2`

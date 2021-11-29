@@ -23,7 +23,7 @@ function EditPassword() {
                         action=""
                         method="POST"
                         btnPrimary="Edit your password"
-                        backLink="/account-user/edit"
+                        backLink="/my-account/edit/"
                         btnSecondary="Cancel"
                     >
                         <Password label="New password" />

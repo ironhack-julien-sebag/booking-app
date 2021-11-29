@@ -16,61 +16,12 @@ import Textarea from "../components/forms/Textarea"
 import ButtonSocial from "../components/ui/ButtonSocial"
 import Button from "../components/ui/Button"
 
+// Utils
+import convertDate from "../components/utils/ConvertDate"
+import getToday from "../components/utils/GetToday"
+
 import Seed from "../components/data/Seed"
 const Rone = Seed[0]
-
-const convertDate = date => {
-    const newDate = date.split("-")
-    const day = newDate[2]
-    let month = newDate[1]
-    const year = newDate[0]
-
-    let convertedMonth =
-        month === "01"
-            ? "January"
-            : month === "02"
-            ? "February"
-            : month === "03"
-            ? "March"
-            : month === "04"
-            ? "April"
-            : month === "05"
-            ? "May"
-            : month === "06"
-            ? "June"
-            : month === "07"
-            ? "July"
-            : month === "08"
-            ? "August"
-            : month === "09"
-            ? "September"
-            : month === "10"
-            ? "October"
-            : month === "11"
-            ? "November"
-            : month === "12"
-            ? "December"
-            : "Error in date"
-
-    return `${day} ${convertedMonth} ${year}`
-}
-
-const getToday = () => {
-    let today = new Date()
-    let dd = today.getDate()
-    let mm = today.getMonth() + 1
-    let yy = today.getFullYear()
-
-    if (dd < 10) {
-        dd = "0" + dd
-    }
-
-    if (mm < 10) {
-        mm = "0" + mm
-    }
-
-    return `${yy}-${mm}-${dd}`
-}
 
 const Buttons = styled.div``
 
@@ -88,7 +39,7 @@ function ArtistDetail() {
                         alt={`Profile picture ${Rone.name}`}
                     />
 
-                    <Button to="/artist-detail/edit" primary>Edit</Button>
+                    <Button to="/artists/id/edit" primary>Edit</Button>
                 </Aside>
 
                 <Content>

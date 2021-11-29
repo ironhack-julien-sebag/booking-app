@@ -9,12 +9,12 @@ const NavItems = [
     },
     {
         path: "/login",
-        text: "Log in"
+        text: "Log in",
     },
     {
-        path: "/account-user",
-        text: "My account"
-    }
+        path: "/my-account",
+        text: "My account",
+    },
 ]
 
 export default NavItems

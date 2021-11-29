@@ -23,14 +23,14 @@ const Location = styled.span``
 function Card(props) {
     return (
         <Container>
-            <Link to="/artist-detail">
+            <Link to="/artists/id/">
                 <Image src={props.img} alt={`Profile picture ${props.name}`} />
             </Link>
 
             <Content>
                 <Title>
                     <Font.H3>
-                        <Link to="/artist-detail">{props.name}</Link>
+                        <Link to="/artists/id/">{props.name}</Link>
                     </Font.H3>
 
                     <Location>
@@ -56,7 +56,9 @@ function Card(props) {
                     <Font.Strong>Price:</Font.Strong> {props.price}
                 </Font.P>
 
-                <Button to="/artist-detail" primary>See their page</Button>
+                <Button to="/artists/id/" primary>
+                    See their page
+                </Button>
             </Content>
         </Container>
     )

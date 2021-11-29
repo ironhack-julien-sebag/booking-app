@@ -36,7 +36,7 @@ function EditAccount() {
                         action=""
                         method="POST"
                         btnPrimary="Edit your account"
-                        backLink="/account-user"
+                        backLink="/my-account"
                         btnSecondary="Cancel"
                     >
                         <Input
@@ -61,7 +61,7 @@ function EditAccount() {
                         />
 
                         <Font.P>
-                            <Link to="/account-user/edit/edit-password">
+                            <Link to="/my-account/edit/edit-password">
                                 Change your password
                             </Link>
                         </Font.P>

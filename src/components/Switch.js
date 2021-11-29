@@ -11,6 +11,7 @@ import AccountUser from "../pages/AccountUser"
 import EditAccount from "../pages/EditAccount"
 import EditPassword from "../pages/EditPassword"
 import EditArtist from "../pages/EditArtist"
+import ForgotPassword from "../pages/ForgotPassword"
 
 // Routes
 const Pages = [
@@ -33,32 +34,35 @@ const Pages = [
     },
 
     {
-        path: "/artist-detail",
+        path: "/artists/id",
         component: ArtistDetail,
     },
 
     {
-        path: "/artist-detail/edit",
+        path: "/artists/id/edit",
         component: EditArtist,
     },
 
     // User
     {
-        path: "/account-user",
+        path: "/my-account",
         component: AccountUser,
     },
 
     {
-        path: "/account-user/edit",
+        path: "/my-account/edit",
         component: EditAccount,
     },
 
     {
-        path: "/account-user/edit/edit-password",
+        path: "/my-account/edit/edit-password",
         component: EditPassword,
     },
 
-    {},
+    {
+        path: "/forgot-password",
+        component: ForgotPassword,
+    },
 ]
 
 function Switch() {

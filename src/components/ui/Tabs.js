@@ -41,7 +41,9 @@ export const TabActive = styled.span`
     }
 `
 
-export const TabContent = styled.div``
+export const TabContent = styled.div`
+    margin-top: ${Variables.Margins.L};
+`
 
 export const Tab = styled.div`
     display: none;

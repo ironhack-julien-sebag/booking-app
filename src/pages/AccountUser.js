@@ -22,7 +22,7 @@ function AccountUser() {
                     <Font.H1>Welcome fullName</Font.H1>
                     
                     <Font.P>
-                        <Link to="/account-user/edit">Edit your account</Link>
+                        <Link to="/my-account/edit">Edit your account</Link>
                     </Font.P>
 
                     <Font.H2>Messages</Font.H2>

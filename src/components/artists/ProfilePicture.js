@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 // Components
 import * as Variables from "../styles/Variables"
-import * as Font from "../styles/Font"
+// import * as Font from "../styles/Font"
 import Icon from "../ui/Icon"
 
 // Styles

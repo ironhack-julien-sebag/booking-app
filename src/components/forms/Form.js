@@ -34,23 +34,25 @@ function Form(props) {
         <Container action={props.action} method={props.method}>
             {props.children}
 
-            <ButtonsContainer>
-                <Button type="submit" primary>
-                    {props.btnPrimary}
-                </Button>
+            {props.btnPrimary && (
+                <ButtonsContainer>
+                    <Button type="submit" primary>
+                        {props.btnPrimary}
+                    </Button>
 
-                {props.cancel && (
-                    <Button type="reset" secondary>
-                        {props.btnSecondary}
-                    </Button>
-                )}
-                
-                {props.backLink && (
-                    <Button as={Link} to={props.backLink} secondary>
-                        {props.btnSecondary}
-                    </Button>
-                )}
-            </ButtonsContainer>
+                    {props.cancel && (
+                        <Button type="reset" secondary>
+                            {props.btnSecondary}
+                        </Button>
+                    )}
+
+                    {props.backLink && (
+                        <Button as={Link} to={props.backLink} secondary>
+                            {props.btnSecondary}
+                        </Button>
+                    )}
+                </ButtonsContainer>
+            )}
         </Container>
     )
 }

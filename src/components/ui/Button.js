@@ -20,8 +20,8 @@ const Container = styled.button`
     font-size: ${Variables.FontSizes.Body};
 
     &:hover {
-        background-color: ${props => props.primary ? Variables.Colors.Secondary : "none"};
-        color: ${props => !props.primary && Variables.Colors.Secondary};
+        background-color: ${props => props.primary ? Variables.Colors.Primary70 : "none"};
+        color: ${props => !props.primary && Variables.Colors.Primary70};
     }
 `
 

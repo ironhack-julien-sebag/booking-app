@@ -21,6 +21,10 @@ const Container = styled.footer`
     gap: ${Variables.Margins.L};
     background-color: ${Variables.Colors.Secondary};
     padding: ${Variables.Margins.L} 5vw;
+
+    p a {
+        color: ${Variables.Colors.Black}
+    }
 `
 
 const Col = styled.div`
@@ -82,17 +86,19 @@ function Footer(props) {
             <Col>
                 {/* Contact form */}
                 <Form action="" method="POST" btnPrimary="Send" id="contact">
-                    <Input label="Your name" name="name" id="name" />
-                    <Input label="Your email" name="email" id="email" />
+                    <Input label="Your name" name="name" id="name" footer />
+                    <Input label="Your email" name="email" id="email" footer />
                     <Input
                         label="Title of your message"
                         name="title"
                         id="title"
+                        footer
                     />
                     <Textarea
                         label="Your message"
                         name="message"
                         id="message"
+                        footer
                     />
                 </Form>
             </Col>

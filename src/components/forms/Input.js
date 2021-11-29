@@ -43,7 +43,11 @@ function Input(props) {
         <Container hidden={props.hidden}>
             {props.label && (
                 <Font.Label
-                    color={Variables.Colors.Primary}
+                    color={
+                        props.footer
+                            ? Variables.Colors.Black
+                            : Variables.Colors.Primary
+                    }
                     weight={Variables.FontWeights.Bold}
                     htmlFor={props.id}
                     big

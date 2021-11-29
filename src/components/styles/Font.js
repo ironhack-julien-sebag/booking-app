@@ -56,7 +56,7 @@ export const P = styled.p`
         transition: ${Variables.Transitions.Short};
 
         &:hover {
-            color: ${Variables.Colors.Secondary};
+            color: ${Variables.Colors.Primary70};
         }
     }
 `

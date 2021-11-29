@@ -4,11 +4,11 @@ import React from "react"
 // import { Link } from "react-router-dom"
 
 // Components
-import Page from "../components/layouts/Page"
+import Page from "../../components/layouts/Page"
 // import * as Font from "../components/styles/Font"
 // import * as Variables from "../components/styles/Variables"
-import Container, { Aside, Content } from "../components/layouts/Container"
-import TabsLogin from "../components/forms/TabsLogin"
+import Container, { Aside, Content } from "../../components/layouts/Container"
+import TabsLogin from "../../components/forms/TabsLogin"
 
 function Login() {
     return (

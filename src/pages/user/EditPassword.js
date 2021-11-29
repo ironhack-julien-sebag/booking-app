@@ -3,12 +3,12 @@ import React from "react"
 // import styled from "styled-components"
 
 // Components
-import Page from "../components/layouts/Page"
-import * as Font from "../components/styles/Font"
+import Page from "../../components/layouts/Page"
+import * as Font from "../../components/styles/Font"
 // import * as Variables from "../components/styles/Variables"
-import Container, { Aside, Content } from "../components/layouts/Container"
-import Form from "../components/forms/Form"
-import Password from "../components/forms/Password"
+import Container, { Aside, Content } from "../../components/layouts/Container"
+import Form from "../../components/forms/Form"
+import Password from "../../components/forms/Password"
 
 function EditPassword() {
     return (

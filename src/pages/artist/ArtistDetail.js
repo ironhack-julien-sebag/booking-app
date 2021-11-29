@@ -3,24 +3,24 @@ import React from "react"
 import styled from "styled-components"
 
 // Components
-import Page from "../components/layouts/Page"
-import * as Font from "../components/styles/Font"
-import * as Variables from "../components/styles/Variables"
-import Container, { Aside, Content } from "../components/layouts/Container"
-import ProfilePicture from "../components/artists/ProfilePicture"
-import Icon from "../components/ui/Icon"
-import Youtube from "../components/ui/Youtube"
-import Form from "../components/forms/Form"
-import Input from "../components/forms/Input"
-import Textarea from "../components/forms/Textarea"
-import ButtonSocial from "../components/ui/ButtonSocial"
-import Button from "../components/ui/Button"
+import Page from "../../components/layouts/Page"
+import * as Font from "../../components/styles/Font"
+import * as Variables from "../../components/styles/Variables"
+import Container, { Aside, Content } from "../../components/layouts/Container"
+import ProfilePicture from "../../components/artists/ProfilePicture"
+import Icon from "../../components/ui/Icon"
+import Youtube from "../../components/ui/Youtube"
+import Form from "../../components/forms/Form"
+import Input from "../../components/forms/Input"
+import Textarea from "../../components/forms/Textarea"
+import ButtonSocial from "../../components/ui/ButtonSocial"
+import Button from "../../components/ui/Button"
 
 // Utils
-import convertDate from "../components/utils/ConvertDate"
-import getToday from "../components/utils/GetToday"
+import convertDate from "../../components/utils/ConvertDate"
+import getToday from "../../components/utils/GetToday"
 
-import Seed from "../components/data/Seed"
+import Seed from "../../components/data/Seed"
 const Rone = Seed[0]
 
 const Buttons = styled.div``

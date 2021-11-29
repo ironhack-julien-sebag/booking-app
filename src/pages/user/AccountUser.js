@@ -4,11 +4,11 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 // Components
-import Page from "../components/layouts/Page"
-import * as Font from "../components/styles/Font"
+import Page from "../../components/layouts/Page"
+import * as Font from "../../components/styles/Font"
 // import * as Variables from "../components/styles/Variables"
-import Container, { Aside, Content } from "../components/layouts/Container"
-import ProfilePicture from "../components/artists/ProfilePicture"
+import Container, { Aside, Content } from "../../components/layouts/Container"
+import ProfilePicture from "../../components/artists/ProfilePicture"
 
 function AccountUser() {
     return (

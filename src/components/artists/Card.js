@@ -53,7 +53,7 @@ function Card(props) {
                 </Font.P>
 
                 <Font.P>
-                    <Font.Strong>Price:</Font.Strong> {props.price}
+                    <Font.Strong>Price:</Font.Strong> {props.price} €
                 </Font.P>
 
                 <Button to="/artists/id/" primary>

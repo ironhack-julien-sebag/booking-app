@@ -4,14 +4,20 @@ import { Routes, Route } from "react-router-dom"
 
 // Pages
 import Home from "../pages/Home"
-import Artists from "../pages/Artists"
-import ArtistDetail from "../pages/ArtistDetail"
-import Login from "../pages/Login"
-import AccountUser from "../pages/AccountUser"
-import EditAccount from "../pages/EditAccount"
-import EditPassword from "../pages/EditPassword"
-import EditArtist from "../pages/EditArtist"
-import ForgotPassword from "../pages/ForgotPassword"
+
+// Login
+import Login from "../pages/login/Login"
+import ForgotPassword from "../pages/login/ForgotPassword"
+
+// Artists
+import Artists from "../pages/artist/Artists"
+import ArtistDetail from "../pages/artist/ArtistDetail"
+import EditArtist from "../pages/artist/EditArtist"
+
+// User
+import AccountUser from "../pages/user/AccountUser"
+import EditAccount from "../pages/user/EditAccount"
+import EditPassword from "../pages/user/EditPassword"
 
 // Routes
 const Pages = [
@@ -25,6 +31,11 @@ const Pages = [
     {
         path: "/login",
         component: Login,
+    },
+
+    {
+        path: "/forgot-password",
+        component: ForgotPassword,
     },
 
     // Artists
@@ -57,11 +68,6 @@ const Pages = [
     {
         path: "/my-account/edit/edit-password",
         component: EditPassword,
-    },
-
-    {
-        path: "/forgot-password",
-        component: ForgotPassword,
     },
 ]
 

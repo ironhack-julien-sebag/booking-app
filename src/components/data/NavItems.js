@@ -1,9 +1,5 @@
 const NavItems = [
     {
-        path: "/",
-        text: "Home",
-    },
-    {
         path: "/artists",
         text: "Artists",
     },

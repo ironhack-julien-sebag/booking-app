@@ -3,23 +3,24 @@ import React from "react"
 // import styled from "styled-components"
 
 // Components
-import Page from "../components/layouts/Page"
-import * as Font from "../components/styles/Font"
-import Container, { Aside, Content } from "../components/layouts/Container"
+import Page from "../../components/layouts/Page"
+import * as Font from "../../components/styles/Font"
+import Container, { Aside, Content } from "../../components/layouts/Container"
 // import * as Variables from "../components/styles/Variables"
-import List from "../components/artists/List"
-import Card from "../components/artists/Card"
-import Form from "../components/forms/Form"
-import Input from "../components/forms/Input"
-import Range from "../components/forms/Range"
+import List from "../../components/artists/List"
+import Card from "../../components/artists/Card"
+import Form from "../../components/forms/Form"
+import Input from "../../components/forms/Input"
+import Range from "../../components/forms/Range"
+import Select from "../../components/forms/Select"
 
 // Utils
-import convertDate from "../components/utils/ConvertDate"
+import convertDate from "../../components/utils/ConvertDate"
+import getToday from "../../components/utils/GetToday"
 
 // Data
-import Seed from "../components/data/Seed"
-
-console.log(convertDate(Seed[0].nextAvailable))
+import SiteData from "../../components/data/SiteData"
+import Seed from "../../components/data/Seed"
 
 function Artists() {
     return (
@@ -45,9 +46,17 @@ function Artists() {
                             min="0"
                             max="10000"
                         />
-                    </Form>
 
-                    {/* Filters: Price, location, genre, availabilities */}
+                        <Select label="Location" name="location" id="location">
+                            {SiteData.Cities.map((item, i) => (
+                                <option value={i} key={i}>{item}</option>
+                            ))}
+                        </Select>
+
+                        <Input label="Genre" name="genre" id="genre" />
+
+                        <Input label="Available" type="date" name="available" id="available" value={getToday()} min={getToday()} />
+                    </Form>
                 </Aside>
 
                 <Content large>
@@ -58,7 +67,7 @@ function Artists() {
                                 id,
                                 name,
                                 genre,
-                                nextAvailable,
+                                available,
                                 price,
                                 picture,
                                 location,
@@ -67,7 +76,7 @@ function Artists() {
                                     name={name}
                                     img={picture}
                                     location={location}
-                                    // next={convertDate(nextAvailable)}
+                                    next={convertDate(available[0])}
                                     price={price}
                                     genre={genre}
                                     key={id}

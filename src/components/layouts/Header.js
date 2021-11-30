@@ -87,8 +87,6 @@ function Header(props) {
                     </Link>
                 ))}
 
-                <ToggleTheme theme={theme} toggleTheme={setTheme} />
-
                 {/* <ToggleTheme theme={theme} toggleTheme={setTheme} /> */}
 
                 {/* Login btn */}

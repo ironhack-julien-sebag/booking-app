@@ -25,7 +25,7 @@ function App() {
             <GlobalStyles />
             <Switch />
 
-            
+            <ToggleTheme theme={theme} toggleTheme={setTheme} />
         </ThemeProvider>
     )
 }

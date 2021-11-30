@@ -15,7 +15,7 @@ function Page(props) {
                 keywords={props.keywords}
             />
 
-            <Header background={props.headerBackground} />
+            <Header background={props.headerBackground} settheme={props.theme} />
 
             {props.children}
 

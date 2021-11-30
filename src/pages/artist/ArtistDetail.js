@@ -48,7 +48,7 @@ function ArtistDetail() {
                     <Font.P>
                         <Icon
                             name="map"
-                            color={Variables.Colors.Primary}
+                            color={Variables.ThemeColors.Primary}
                             size={16}
                         />
                         <Font.Strong>Location:</Font.Strong> {Rone.location}

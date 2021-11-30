@@ -32,7 +32,7 @@ export const TabActive = styled.span`
     bottom: -2px;
     width: calc(50% - ${Variables.Margins.L} / 2);
     height: 2px;
-    background-color: ${Variables.Colors.Primary};
+    background-color: ${Variables.ThemeColors.Primary};
     left: 0;
 
     &.create {

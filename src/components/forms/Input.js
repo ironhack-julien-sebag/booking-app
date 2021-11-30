@@ -28,7 +28,7 @@ const InputStyled = styled.input`
     outline: none;
 
     &:focus {
-        border-color: ${Variables.Colors.Primary};
+        border-color: ${Variables.ThemeColors.Primary};
     }
 
     &:disabled {
@@ -43,11 +43,7 @@ function Input(props) {
         <Container hidden={props.hidden}>
             {props.label && (
                 <Font.Label
-                    color={
-                        props.footer
-                            ? Variables.Colors.Black
-                            : Variables.Colors.Primary
-                    }
+                    color={Variables.ThemeColors.Primary}
                     weight={Variables.FontWeights.Bold}
                     htmlFor={props.id}
                     big

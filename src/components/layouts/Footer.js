@@ -19,7 +19,7 @@ const Container = styled.footer`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: ${Variables.Margins.L};
-    background-color: ${Variables.Colors.Secondary};
+    background-color: ${Variables.ThemeColors.FooterBackground};
     padding: ${Variables.Margins.L} 5vw;
 
     p a {

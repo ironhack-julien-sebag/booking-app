@@ -25,7 +25,7 @@ const Input = styled.textarea`
     min-height: 200px;
 
     &:focus {
-        border-color: ${Variables.Colors.Primary};
+        border-color: ${Variables.ThemeColors.Primary};
     }
 
     &:disabled {
@@ -43,7 +43,7 @@ function Textarea(props) {
     return (
         <Container>
             <Font.Label
-                color={Variables.Colors.Primary}
+                color={Variables.ThemeColors.Primary}
                 weight={Variables.FontWeights.Bold}
                 htmlFor={props.id}
                 big

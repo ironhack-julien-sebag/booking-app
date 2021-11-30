@@ -11,8 +11,8 @@ import * as Variables from "../styles/Variables"
 const Container = styled.button`
     border: none;
     padding: ${Variables.Margins.XS} ${Variables.Margins.S};
-    background: ${props => (props.primary ? Variables.Colors.Primary : "none")};
-    color: ${props => props.primary ? Variables.Colors.White : Variables.Colors.Primary};
+    background: ${props => (props.primary ? Variables.ThemeColors.Primary : "none")};
+    color: ${props => props.primary ? Variables.Colors.White : Variables.ThemeColors.Primary};
     text-decoration: none;
     transition: ${Variables.Transitions.Short};
     border-radius: ${Variables.Radiuses.S};
@@ -20,8 +20,8 @@ const Container = styled.button`
     font-size: ${Variables.FontSizes.Body};
 
     &:hover {
-        background-color: ${props => props.primary ? Variables.Colors.Primary70 : "none"};
-        color: ${props => !props.primary && Variables.Colors.Primary70};
+        background-color: ${props => props.primary ? Variables.ThemeColors.Primary70 : "none"};
+        color: ${props => !props.primary && Variables.ThemeColors.Primary70};
     }
 `
 

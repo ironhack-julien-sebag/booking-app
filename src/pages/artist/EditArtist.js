@@ -40,7 +40,7 @@ function EditArtist() {
                     <Font.P>
                         <Icon
                             name="map"
-                            color={Variables.Colors.Primary}
+                            color={Variables.ThemeColors.Primary}
                             size={16}
                         />
                         <Font.Strong>Location:</Font.Strong> <Input name="location" id="location" value={Rone.location} />

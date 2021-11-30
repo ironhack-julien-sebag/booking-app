@@ -30,7 +30,7 @@ const SelectContainer = styled.div`
         ${IconMixin({
             icon: "chevron-down",
             size: 24,
-            color: Variables.Colors.Primary,
+            color: Variables.ThemeColors.Primary,
         })}
         position: absolute;
         z-index: 1;
@@ -58,7 +58,7 @@ const SelectInput = styled.select`
     }
 
     &:focus {
-        border-color: ${Variables.Colors.Primary};
+        border-color: ${Variables.ThemeColors.Primary};
     }
 
     &:disabled {
@@ -73,7 +73,7 @@ function Select(props) {
         <Container>
             {props.label && (
                 <Font.Label
-                    color={Variables.Colors.Primary}
+                    color={Variables.ThemeColors.Primary}
                     weight={Variables.FontWeights.Bold}
                     htmlFor={props.id}
                     big

@@ -24,7 +24,7 @@ function ProfilePicture(props) {
             <Picture src={props.src} alt={props.alt} />
             
             <IconContainer>
-                <Icon name="edit" size={24} color={Variables.Colors.Primary} />
+                <Icon name="edit" size={24} color={Variables.ThemeColors.Primary} />
             </IconContainer>
 
             <Input type="file" name="picture" id="picture" />

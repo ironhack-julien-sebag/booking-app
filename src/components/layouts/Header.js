@@ -25,7 +25,7 @@ const Container = styled.header`
     justify-content: space-between;
     padding: ${Variables.Margins.M} 5vw;
     background-color: ${props =>
-        props.background ? Variables.Colors.Primary : "transparent"};
+        props.background ? Variables.ThemeColors.NavBackground : "transparent"};
     z-index: 999;
 `
 
@@ -38,7 +38,7 @@ const Nav = styled.nav`
         color: ${props =>
             props.background
                 ? Variables.Colors.White
-                : Variables.Colors.Primary};
+                : Variables.ThemeColors.Primary};
         font-weight: ${props =>
             props.active
                 ? Variables.FontWeights.Bold
@@ -54,7 +54,7 @@ const Nav = styled.nav`
             background-color: ${props =>
                 props.background
                     ? Variables.Colors.White
-                    : Variables.Colors.Primary};
+                    : Variables.ThemeColors.Primary};
             height: 2px;
             left: 50%;
             transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -88,6 +88,8 @@ function Header(props) {
                 ))}
 
                 <ToggleTheme theme={theme} toggleTheme={setTheme} />
+
+                {/* <ToggleTheme theme={theme} toggleTheme={setTheme} /> */}
 
                 {/* Login btn */}
                 {/* Search here */}

@@ -28,7 +28,7 @@ const Input = styled.input`
     outline: none;
 
     &:focus {
-        border-color: ${Variables.Colors.Primary};
+        border-color: ${Variables.ThemeColors.Primary};
     }
 
     &:disabled {
@@ -57,7 +57,7 @@ function Password(props) {
     return (
         <Container>
             <Font.Label
-                color={Variables.Colors.Primary}
+                color={Variables.ThemeColors.Primary}
                 weight={Variables.FontWeights.Bold}
                 htmlFor={props.id}
                 big
@@ -72,7 +72,7 @@ function Password(props) {
                     <Icon
                         name={isIcon}
                         size={16}
-                        color={Variables.Colors.Primary}
+                        color={Variables.ThemeColors.Primary}
                         onClick={() => setIsVisible(!isVisible)}
                     />
                 </Button>

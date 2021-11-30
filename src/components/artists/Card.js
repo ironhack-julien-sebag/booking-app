@@ -37,7 +37,7 @@ function Card(props) {
                         <Icon
                             name="map"
                             size={16}
-                            color={Variables.Colors.Primary}
+                            color={Variables.ThemeColors.Primary}
                         />
 
                         {props.location}

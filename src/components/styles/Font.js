@@ -50,13 +50,13 @@ export const P = styled.p`
     font-weight: ${Variables.FontWeights.Regular};
 
     a {
-        color: ${Variables.Colors.Primary};
+        color: ${Variables.ThemeColors.Primary};
         font-weight: ${Variables.FontWeights.Semibold};
         text-decoration: none;
         transition: ${Variables.Transitions.Short};
 
         &:hover {
-            color: ${Variables.Colors.Primary70};
+            color: ${Variables.ThemeColors.Primary70};
         }
     }
 `

@@ -14,7 +14,6 @@ import GlobalStyles from "./components/styles/GlobalStyles"
 
 function App() {
     const [theme, setTheme, componentMounted] = useDarkMode()
-
     const themeMode = theme === "Light" ? Variables.LightTheme : Variables.DarkTheme
 
     if (!componentMounted) {
@@ -24,10 +23,9 @@ function App() {
     return (
         <ThemeProvider theme={themeMode}>
             <GlobalStyles />
-
             <Switch />
+
             
-            <ToggleTheme theme={theme} toggleTheme={setTheme} />
         </ThemeProvider>
     )
 }

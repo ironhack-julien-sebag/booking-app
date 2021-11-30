@@ -78,6 +78,7 @@ export const LightTheme = {
     FontColor: ColorsCommon.Black,
     NavBackground: "#142F43",
     NavLinks: ColorsCommon.White,
+    FooterBackground: ColorsCommon.LightGray,
 }
 
 export const DarkTheme = {
@@ -95,6 +96,7 @@ export const DarkTheme = {
     FontColor: ColorsCommon.White,
     NavBackground: ColorsCommon.DarkGray,
     NavLinks: ColorsCommon.White,
+    FooterBackground: ColorsCommon.DarkGray,
 }
 
 export const ThemeColors = {
@@ -123,6 +125,7 @@ export const ThemeColors = {
     FontColor: ({ theme }) => theme.FontColor,
     NavBackground: ({ theme }) => theme.NavBackground,
     NavLinks: ({ theme }) => theme.NavLinks,
+    FooterBackground: ({ theme }) => theme.FooterBackground,
 }
 
 // Margins

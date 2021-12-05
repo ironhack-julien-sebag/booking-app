@@ -11,6 +11,10 @@ const NavItems = [
         path: "/my-account",
         text: "My account",
     },
+    {
+        path: "/artist",
+        text: "Artist account"
+    },
 ]
 
 export default NavItems

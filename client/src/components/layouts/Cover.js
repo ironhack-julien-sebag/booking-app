@@ -45,6 +45,22 @@ const Img = styled.img`
 const Content = styled.div`
     position: relative;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vw;
+    text-align: center;
+`
+
+const Title = styled(Font.H1)`
+    margin: ${Variables.Margins.XL} 0;
+`
+
+const LogoStyled = styled(Logo)`
+    --size: 150px;
+    width: var(--size);
+    height: var(--size);
 `
 
 function Cover(props) {
@@ -53,9 +69,9 @@ function Cover(props) {
             <Img src={props.img} alt={props.alt} fixed={props.fixed} />
             
             <Content>
-                <Logo />
+                <LogoStyled />
                 
-                {props.title && <Font.H1>{props.title}</Font.H1>}
+                {props.title && <Title display>{props.title}</Title>}
 
                 {props.children}
             </Content>

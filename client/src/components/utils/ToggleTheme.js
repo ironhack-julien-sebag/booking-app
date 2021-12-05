@@ -11,19 +11,69 @@ import * as Variables from "../styles/Variables"
 const Button = styled.button`
     border: none;
     background: none;
-    font-size: 16px;
+    font-size: ${Variables.FontSizes.Body};
     display: inline-flex;
     align-items: center;
-    color: ${Variables.ThemeColors.Primary};
-    transition: ${Variables.Transitions.Short};
-    font-weight: ${Variables.FontWeights.Bold};
+    position: relative;
+    color: ${Variables.Colors.White};
+    font-weight: ${Variables.FontWeights.Regular};
+    text-decoration: none;
+
+    &.active {
+        font-weight: ${Variables.FontWeights.Bold};
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        width: 0;
+        background-color: currentColor;
+        height: 2px;
+        left: 50%;
+        transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    &:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    &:not(:last-child) {
+        margin-right: ${Variables.Margins.M};
+    }
 
     .Icon {
         margin-right: ${Variables.Margins.XS};
     }
 
-    &:hover {
-        color: ${Variables.ThemeColors.Primary70};
+    color: ${Variables.Colors.White};
+    font-weight: ${Variables.FontWeights.Regular};
+    text-decoration: none;
+    position: relative;
+
+    &.active {
+        font-weight: ${Variables.FontWeights.Bold};
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        width: 0;
+        background-color: currentColor;
+        height: 2px;
+        left: 50%;
+        transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    &:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    &:not(:last-child) {
+        margin-right: ${Variables.Margins.M};
     }
 `
 
@@ -39,7 +89,7 @@ export default function ToggleTheme({ theme, toggleTheme }) {
                 className="Icon"
             />
             
-            Switch to {isLight ? "dark" : "light"} theme
+            {isLight ? "Dark" : "Light"} theme
         </Button>
     )
 }

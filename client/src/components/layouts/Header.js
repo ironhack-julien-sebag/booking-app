@@ -9,7 +9,6 @@ import Logo from "../ui/LogoLink"
 import * as Variables from "../styles/Variables"
 
 // Switch color modes
-import useDarkMode from "../utils/useDarkMode"
 import ToggleTheme from "../utils/ToggleTheme"
 
 // Data
@@ -67,10 +66,6 @@ const Nav = styled.nav`
 `
 
 function Header(props) {
-    const [theme, setTheme, componentMounted] = useDarkMode()
-
-    const themeMode = theme === "Light" ? Variables.LightTheme : Variables.DarkTheme
-    
     return (
         <Container>
             <Logo />
@@ -82,7 +77,7 @@ function Header(props) {
                     </Link>
                 ))}
 
-                {/* <ToggleTheme theme={theme} toggleTheme={setTheme} /> */}
+                <ToggleTheme theme={props.theme} toggleTheme={props.toggleTheme} />
 
                 {/* Login btn */}
                 {/* Search here */}

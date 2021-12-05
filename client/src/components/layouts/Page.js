@@ -1,15 +1,10 @@
 // Packages
 import React from "react"
-import { useLocation } from "react-router"
 
 // Components
 import Helmet from "./Helmet"
-import Header from "./Header"
-import Footer from "./Footer"
 
 function Page(props) {
-    let location = useLocation()
-
     return (
         <>
             <Helmet
@@ -18,13 +13,7 @@ function Page(props) {
                 keywords={props.keywords}
             />
 
-            {location.pathname !== "/" && (
-                <Header />
-            )}
-
             {props.children}
-
-            {!props.noFooter && <Footer />}
         </>
     )
 }

@@ -14,9 +14,10 @@ import ForgotPassword from "../pages/login/ForgotPassword"
 import Artists from "../pages/artist/Artists"
 import ArtistDetail from "../pages/artist/ArtistDetail"
 import EditArtist from "../pages/artist/EditArtist"
+import ArtistAccount from "../pages/artist/ArtistAccount"
 
 // Data artists
-import Seed from "./data/Seed"
+import artists from "./data/artists.json"
 
 // User
 import AccountUser from "../pages/user/AccountUser"
@@ -46,6 +47,10 @@ const Pages = [
     {
         path: "/artists",
         component: Artists,
+    },
+    {
+        path: "/artist",
+        component: ArtistAccount
     },
 
     // {
@@ -87,17 +92,17 @@ function Switch() {
                 />
             ))}
 
-            {Seed.map(artist => (
+            {artists.map(artist => (
                 <Route
-                    path={`/artists/${artist.id}`}
+                    path={`/artists/${artist._id.$oid}`}
                     element={<ArtistDetail artist={artist} />}
                     key={uuid()}
                 />
             ))}
 
-            {Seed.map(artist => (
+            {artists.map(artist => (
                 <Route
-                    path={`/artists/${artist.id}/edit`}
+                    path={`/artists/${artist._id.$oid}/edit`}
                     element={<EditArtist artist={artist} />}
                     key={uuid()}
                 />

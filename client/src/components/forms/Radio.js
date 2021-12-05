@@ -38,7 +38,7 @@ const Label = styled(Font.Label)`
 
 function Radio(props) {
     return (
-        <Container>
+        <Container onClick={props.onClick}>
             <Input type="radio" name={props.name} id={props.id} />
             <Label weight={Variables.FontWeights.Bold} htmlFor={props.id}>{props.label}</Label>
         </Container>

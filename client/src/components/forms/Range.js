@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 // Components
 import * as Variables from "../styles/Variables"
-import * as Font from "../styles/Font"
 import Input from "./Input"
 
 // Styles
@@ -25,6 +24,7 @@ function Range(props) {
                 min={props.min}
                 max={props.max}
                 value={props.min}
+                onChange={props.changeMin}
             />
 
             <Input
@@ -35,6 +35,7 @@ function Range(props) {
                 min={props.min}
                 max={props.max}
                 value={props.max}
+                onChange={props.changeMax}
             />
         </Container>
     )

@@ -24,8 +24,12 @@ const Container = styled.button`
         color: ${props => !props.primary && Variables.ThemeColors.Primary70};
     }
 
-    ${props => props.start && css`
-        justify-self: start;
+    ${props => props.justify && css`
+        justify-self: ${props => props.justify};
+    `}
+
+    ${props => props.large && css`
+        font-size: ${Variables.FontSizes.TitleMedium};
     `}
 `
 

@@ -59,6 +59,12 @@ export const P = styled.p`
             color: ${Variables.ThemeColors.Primary70};
         }
     }
+
+    ${props =>
+        props.bio &&
+        css`
+            white-space: pre-line;
+        `}
 `
 
 export const Strong = styled.strong`

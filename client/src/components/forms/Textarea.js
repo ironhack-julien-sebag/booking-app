@@ -1,6 +1,6 @@
 // Packages
 import React from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 // Components
 import * as Variables from "../styles/Variables"
@@ -33,27 +33,38 @@ const Input = styled.textarea`
         background-color: ${Variables.Colors.LightGray};
         cursor: not-allowed;
     }
-
-    ${props => props.auto && css`
-        height: auto;
-    `}
 `
 
 function Textarea(props) {
     return (
         <Container>
-            <Font.Label
-                color={Variables.ThemeColors.Primary}
-                weight={Variables.FontWeights.Bold}
-                htmlFor={props.id}
-                big
-            >
-                {props.label}
-            </Font.Label>
+            {props.label && (
+                <Font.Label
+                    color={Variables.ThemeColors.Primary}
+                    weight={Variables.FontWeights.Bold}
+                    htmlFor={props.id}
+                    big
+                >
+                    {props.label}
+                </Font.Label>
+            )}
 
-            <Input name={props.name} id={props.id} {...props}>
-                {props.value && props.value}
-            </Input>
+            {props.auto ? (
+                <Input
+                    as={Font.P}
+                    name="props.name"
+                    id={props.id}
+                    {...props}
+                    contentEditable
+                    bio
+                >
+                    {props.value && props.value}
+                </Input>
+            ) : (
+                <Input name={props.name} id={props.id} {...props}>
+                    {props.value && props.value}
+                </Input>
+            )}
         </Container>
     )
 }

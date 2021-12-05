@@ -1,5 +1,5 @@
 // Packages
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 
 // Components
 import * as Variables from "../styles/Variables"
@@ -18,10 +18,26 @@ export const Aside = styled.aside`
     grid-template-columns: 1fr;
     gap: ${Variables.Margins.L};
     align-self: start;
+
+    ${props => props.artist && css`
+        justify-items: center;
+    `}
+`
+
+export const ItemContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: ${Variables.Margins.XS};
 `
 
 export const Content = styled.main`
     grid-column: span ${props => (props.large ? 3 : 2)};
+`
+
+export const ArtistContainer = styled(Content)`
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: ${Variables.Margins.L};
 `
 
 export default Container

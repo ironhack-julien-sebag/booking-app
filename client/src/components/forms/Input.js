@@ -12,10 +12,12 @@ const Container = styled.div`
     grid-template-columns: 1fr;
     width: 100%;
     gap: ${Variables.Margins.XXS};
-    
-    ${props => props.hidden && css`
-        display: none;
-    `}
+
+    ${props =>
+        props.hidden &&
+        css`
+            display: none;
+        `}
 `
 
 const InputStyled = styled.input`
@@ -36,11 +38,18 @@ const InputStyled = styled.input`
         background-color: ${Variables.Colors.LightGray};
         cursor: not-allowed;
     }
+
+    ${props =>
+        props.large &&
+        css`
+            font-size: ${Variables.FontSizes.TitleLarge};
+            font-weight: ${Variables.FontWeights.Bold};
+        `}
 `
 
 function Input(props) {
     return (
-        <Container hidden={props.hidden}>
+        <Container hidden={props.hidden} style={props.style}>
             {props.label && (
                 <Font.Label
                     color={Variables.ThemeColors.Primary}
